@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.playableArea{
+ height: 100vh;
+ width: 100%;
+ background-color: rgb(50, 180, 30);  
+ display: grid;
+ place-items: center;
+ font-size: 2em;
+ font-family: "Tinos", serif;
+ color:white; 
+}
+.front-page,
+.end-screen{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(44, 122, 174);
+    font-family:"Tinos", serif ;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+.front-page.active,
+.end-screen.active{
+    display: grid;
+    place-items: center;
+}
+p{
+    font-size: 1.4rem;
+}
+.front-page{
+    cursor: pointer;
+}
+.container{
+    max-width: 700px;
+    padding: 0 32px;
+}
+.front-page h1{
+    font-size: 50px;
+    margin: 8px 0;
+}
+
+.end-screen h1{
+    font-size: 50px;
+}
+.reactionTime{
+    font-size: 100px;
+    font-weight: 800;
+}
+.PLAYAGAIN{
+     border-radius:50px ;
+     color: white;
+     background-color: transparent;
+     border-width: 1px;
+     border-color: #fff;
+     padding: 10px;
+     border-style: dashed;
+     cursor: pointer;
+     font-size: 1.3rem;
+     letter-spacing: 2px;
+
+}
